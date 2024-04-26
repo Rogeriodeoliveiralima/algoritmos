@@ -32,3 +32,19 @@ for(let atual = 0; atual < livros.length; atual ++){
     livros[maior] = livroAtual;
 }
 console.log(livros);
+
+
+//deletar
+ for (let atual = 0; atual < livros.length; atual++){
+     let menor = menorValor(livros, atual)
+
+    let livroAtual = livros[atual];    let livrosMenorPreco = livros[menor];
+
+     livros[atual] = livrosMenorPreco;
+     console.log ('posiçao atual', atual);
+     console.log('livro atual', livros[atual]);
+     livros[menor] = livroAtual;
+     console.log('livro menor preço', livros[menor]);
+
+ }
+ console.log(livros);
